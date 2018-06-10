@@ -12,9 +12,12 @@ from apache_beam.io import WriteToText
 from apache_beam.options.pipeline_options import PipelineOptions
 from apache_beam.options.pipeline_options import SetupOptions
 
+input_file = 'users.json'
+output_file = 'demo.json'
+
 options = PipelineOptions()
 google_cloud_options = options.view_as(GoogleCloudOptions)
-google_cloud_options.project = 'my-project-id'
+google_cloud_options.project = '646242914312'
 google_cloud_options.job_name = 'myjob'
 google_cloud_options.staging_location = 'gs://agistaging'
 
